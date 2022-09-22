@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random user</title>
+</head>
+<body>
+
+    <!-- <script>
+        function sumar(a, b) {
+            return a + b
+        }
+        
+        let variable = sumar(3, 4) // aquí especificamos los datos para la función
+
+        console.log(variable);
+    
+    </script> -->
+
+<!-- ------------------------------------------------ -->    
+
+    <!-- <script>
+        function sumar(a, b) {
+            return a + b
+        }
+        
+        console.log(suma()); // = esto es una "promesa" que indica que la información (datos de la suma) no es inmediata, por lo normal para sacarlas de otro lugar
+    
+    </script> -->
+
+<!-- ------------------------------------------------ -->
+
+    <!-- <script>
+        function sumar(a, b) {
+            return a + b
+        }
+
+        const myFunction = async () => {
+
+        }
+
+        fetch()  // se llama "metodo" y es el "metodo" que se usa para hacer llamadas a API con javascript
+                // no necesita generar una función, porque ya se reconoce la función
+                //
+
+        myFunction()
+        restar()
+        let variable = sumar();
+
+        console.log(variable);
+    </script> -->
+
+<!-- ------------------------------------------------ -->
+
+    <!-- <script>
+
+
+        let getUser = fetch('') // = esta forma se usa para extraer los datos de otro sitio.
+
+    </script> -->
+
+<!-- ------------------------------------------------ -->
+
+    <!-- <script>
+        const suma = (a, b) => {
+            return a + b
+        }
+
+        let variable = suma(3, 3)
+        
+        suma ()
+            .then()
+            .catch()
+
+    </script> -->
+
+<!-- ------------------------------------------------ -->
+    
+    <!-- <script>
+        const suma = (a, b) => {
+            return a + b
+        }
+
+        let variable = suma(3, 3)
+        const dfasd = () => {}
+        let number = 34; // = "number" = variable / = / "34" = función
+        
+        suma ()
+            .then() // .then((respuesta) => {}) función sin nombre
+            .catch() // .catch((error) => {})
+
+    </script> -->
+
+<!-- ------------------------------------------------ -->
+
+    <!-- <input type="text" onchange="() => {}">
+
+    <script>
+
+        const suma = (a, b) => {
+            return a + b
+        }
+
+        let variable = suma(3, 3)
+
+        let persona = {
+            nombre: 'Pepe',
+            edad: 70,
+            altura: '170 cm'
+        }
+
+        suma()
+            .then((respuesta) => {
+                return respuesta
+            })
+            .catch((error) => {
+                console.error(error)
+            })
+    </script> -->
+
+<!-- ------------------------------------------------ -->
+
+    <!-- <script>
+        const getUser = async() => {
+        fetch('https://randomuser.me/api/')
+            .then((resultado) => {
+                // debugger
+                resultado.json()
+                    .then((res) => {
+                        console.log(res)
+                        // debugger
+                        return res
+                    })
+                    .catch((err) => {
+                        console.log(err)
+                        // debugger
+                    })
+            })
+            .catch((error) => {
+                console.error(error)
+                // debugger
+            })
+        
+        }
+
+            let user1 = getUser();
+            let user2 = getUser();
+
+    </script> -->
+
+<!-- ------------------------------------------------ -->
+
+<script>
+    const getUser = async() => {
+        let user = await fetch('https://randomuser.me/api/')
+            .then((resultado) => {
+                // debugger
+                resultado.json()
+                    .then((res) => {
+                        console.log(res)
+                        // debugger
+                        return res
+                    })
+                    .catch((err) => {
+                        console.log(err)
+                        // debugger
+                    })
+            })
+            .catch((error) => {
+                console.error(error)
+                // debugger
+            })
+    
+        return user
+    }
+
+        let user1 = getUser();
+        let user2 = getUser();
+        console.log(user1);
+        console.log(user2);
+
+</script>
+
+
+
+
+</body>
+</html>
